@@ -1,0 +1,20 @@
+
+<div class="container">
+    <h1>test</h1>
+    <div class="panel panel-primary">
+        <div class="panel-heading">School List</div>
+        <div class="panel-body">
+<div class="row">
+    <div style="font-size:medium" *ngFor="let sch of schools;">
+        <div class="card--media">
+            <div class="col-md-2">{{sch.Id}}</div>
+            <div class="col-md-2">{{sch.InstituteName}}</div>
+            <div class="col-md-2">{{sch.InstituteAddress}}</div>
+            <div class="col-md-2"><a (click)="navigateToSchoolDetail(sch.Id)">Detail</a></div>
+        </div>
+        </div>
+    </div> 
+</div>
+    </div>
+</div> 
+<a class="ccccc">test</a>

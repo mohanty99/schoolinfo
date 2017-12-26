@@ -1,0 +1,19 @@
+﻿<div class="container">
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">Student List</div>
+        <div class="panel-body">
+    <div style="font-size:medium" *ngFor="let stu of students;">
+        <div class="row">
+            <div class="col-md-1">{{stu.Id}}</div>
+            <div class="col-md-1">{{stu.ClassId}}</div>
+            <div class="col-md-1">{{stu.InstituteId}}</div>
+            <div class="col-md-2">{{stu.StudentName}}</div>
+            <div class="col-md-2">{{stu.StudentAddress}}</div>
+            <div class="col-md-2"><a (click)="navigateToStudentDetail(stu.Id)">Detail</a></div>
+            <div class="col-md-2"><a (click)="navigateToStudentEdit(stu.Id)">Edit</a></div>
+        </div>
+    </div>
+</div>
+   </div>
+</div>
